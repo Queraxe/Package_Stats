@@ -46,6 +46,9 @@ function click() {
 		var stunden = Math.trunc(minges / 60);
 		fhourdiv.innerHTML = stunden;
 		var minuten = Math.trunc(minges - stunden * 60);
+		if (minuten === `0`) {
+			minuten = `00`;
+		}
 		fmindiv.innerHTML = minuten;
 	}
 
