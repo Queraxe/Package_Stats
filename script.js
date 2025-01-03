@@ -21,6 +21,7 @@ function click() {
 
 	if (currentstop === 1) {
 		starttime = now;
+		pacediv.innerHTML = `1<span>p/h</span>`;
 	} else {
 		diffmins =
 			now.getHours() * 60 +
