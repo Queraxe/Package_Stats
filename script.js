@@ -116,8 +116,12 @@ function setCookies(ts, cs, st) {
 	document.cookie = `currentstop=${cs}; expires=${expires}; path=/`;
 	document.cookie = `starttime=${st}; expires=${expires}; path=/`;
 }
-
+var counter = 0;
 document.getElementById("reset").onclick = function func() {
-	clearAllCookies();
-	location.reload();
+	if (counter < 5) {
+		counter++;
+	} else {
+		clearAllCookies();
+		location.reload();
+	}
 };
