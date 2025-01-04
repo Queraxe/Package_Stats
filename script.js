@@ -20,7 +20,7 @@ console.log(document.cookie);
 if (getCookieValue("totalstops") === "null" || document.cookie === "") {
 	// abfrage wie viele totalstops
 	// Abfrage einer Zahl
-	let userInput = prompt("Bitte gib eine Zahl ein:");
+	let userInput = prompt("Wie viele Stops hast du heute?");
 
 	totalstops = userInput;
 	currentstop = 0;
