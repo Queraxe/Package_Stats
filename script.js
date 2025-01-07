@@ -60,7 +60,7 @@ function ajust() {
 		// rest in Minuten
 		rest = (totalstops - currentstop) / pace;
 
-		pacediv.innerHTML = `${pace * 60}<span>p/h</span>`;
+		pacediv.innerHTML = `${Math.round(pace * 60)}<span>p/h</span>`;
 
 		// left anzeige
 		var stunden = Math.trunc(rest / 60);
