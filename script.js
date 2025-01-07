@@ -69,7 +69,7 @@ function ajust() {
 		mindiv.innerHTML = minuten;
 
 		// wann fertig anzeige
-		var minges = starttime.getHours() * 60 + starttime.getMinutes() + rest;
+		var minges = now.getHours() * 60 + now.getMinutes() + rest;
 		var stunden = Math.trunc(minges / 60);
 		fhourdiv.innerHTML = stunden;
 		var minuten = Math.trunc(minges - stunden * 60);
