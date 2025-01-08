@@ -125,3 +125,11 @@ document.getElementById("reset").onclick = function func() {
 		location.reload();
 	}
 };
+
+document.getElementById("change").onclick = function f(){
+	let userInput = prompt("Wie viele Stops hast du heute?");
+
+	totalstops = userInput;
+	totalstopsdiv.innerHTML = totalstops;
+	ajust();
+}
